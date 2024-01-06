@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        p{
+            color:#FFF;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        .box{
+            margin: 200px auto;
+        }
+        @keyframes battery {
+            0%{
+                width: 40px;
+                background: red;
+            }
+            25%{
+                width: 80px;
+                background: orange;
+            }
+            50%{
+                width: 120px;
+                background:yellow;
+            }
+            75%{
+                width: 160px;
+                background: yellowgreen;
+            }
+            100%{
+                width: 197px;
+                background: green;
+            }
+        }
+        .b1{
+            width: 200px;
+            height: 100px;
+            border: solid 3px #FFF;
+            float: left;
+            border-radius: 10px;
+            position: relative;
+        }
+        .b_1{
+            width: 194px;
+            height: 94px;
+            margin-top: 3px;
+            margin-left: -197px;
+            background-color: white;
+            float: left;
+            border-radius: 10px;
+            position: relative;
+            animation: battery 5s linear infinite;
+        }
+        .b2{
+            width: 20px;
+            height: 30px;
+            float: left;
+            margin-top: 35px;
+            border: solid 3px #FFF;
+            border-radius: 5px;
+            margin-left: 3px;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body style="background: rgb(31, 29, 29);">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="box">
+                        <p>BATTERY STATUS</p>
+                        <div class="b1"></div>
+                        <div class="b_1"></div>
+                        <div class="b2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+    <script src="wow.min.js"></script>
+		
+   		<script>
+  		   new WOW().init();
+  		</script>
+				
+		<script src="aos.js"></script>
+		
+   		<script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+		</script>	
+</body>
+</html>
